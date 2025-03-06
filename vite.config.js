@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.BASE_URL ||'/', // Chemin correspondant au nom du dépôt sur GitHub Pages
+      base: '/abdoulaye-portfolio/', // Chemin correspondant au nom du dépôt sur GitHub Pages
   build: {
     rollupOptions: {
       input: './index.html', // Spécifie le fichier d'entrée principal
