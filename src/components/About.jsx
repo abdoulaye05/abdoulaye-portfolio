@@ -30,7 +30,7 @@ function About() {
         <h5 className={styles.about__tag}>à propos</h5>
         <h3><Title /></h3>
         <p>
-          Je suis Diallo Abdoulaye, développeur full stack junior, passionné par le développement d’applications et la création de sites web modernes, dynamiques et accessibles. Mon parcours en informatique et mes expériences variées, notamment au sein de mon entreprise Mobydev, m'ont permis de maîtriser de nombreuses technologies, telles que React, Vue.js, Node.js, MySQL, et bien d'autres. Avec un intérêt marqué pour l'innovation, j’allie compétences techniques et créativité pour concevoir des applications performantes et des solutions adaptées aux besoins spécifiques. Mon approche collaborative et ma capacité à apprendre rapidement font de moi une personne créatif sur des projets avec un  regards sur  des solutions adaptées.       </p>
+          Je suis Diallo Abdoulaye, développeur full stack junior, passionné par le développement d’applications et la création de sites web modernes, dynamiques et accessibles. Mon parcours en informatique et mes expériences variées, notamment au sein de mon entreprise Mobydev, m'ont permis de maîtriser de nombreuses technologies, telles que React, Vue.js, Node.js, MySQL, et bien d'autres. Avec un intérêt marqué pour l'innovation, j’allie compétences techniques et créativité pour concevoir des applications performantes et des solutions adaptées aux besoins spécifiques. Mon approche collaborative et ma capacité à apprendre rapidement font de moi une personne créatif sur des projets avec regards sur  des solutions adaptées.       </p>
       </div>
       <div className={styles.about__picture}>
         <img
