@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-  <base href="/abdoulaye-portfolio/">
-
   <meta charset="UTF-8" />
+  <!-- Vite remplacera /abdoulaye-portfolio/ par "/abdoulaye-portfolio/" lors du build -->
+  <base href="/abdoulaye-portfolio/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdoulaye Diallo - Portfolio</title>
-
+  <title>Abdoulaye Diallo – Portfolio</title>
   <!-- Icône du site -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-
+  <link rel="icon" href="/abdoulaye-portfolio/favicon.ico" />
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,20 +15,15 @@
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
           rel="stylesheet"
   />
+  <script type="module" crossorigin src="/abdoulaye-portfolio/assets/index-DdwH-I9G.js"></script>
+  <link rel="stylesheet" crossorigin href="/abdoulaye-portfolio/assets/index-Bn_S3zLZ.css">
 </head>
 <body>
 <div id="root"></div>
-
-<!-- Script pour charger dynamiquement le bon fichier JS -->
-<script>
-  fetch('manifest.json')
-          .then(response => response.json())
-          .then(manifest => {
-            const script = document.createElement('script');
-            script.type = 'module';
-            script.src = manifest['index.html'].file;
-            document.body.appendChild(script);
-          });
-</script>
+<!--
+  🚩 IMPORTANT :
+  Ne préfixe PAS par /abdoulaye-portfolio/ ici : Vite doit voir "/src/main.jsx"
+  pour l'analyser et le compiler.
+-->
 </body>
 </html>
