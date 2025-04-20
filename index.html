@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
+  <base href="/abdoulaye-portfolio/">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abdoulaye Diallo - Portfolio</title>
 
   <!-- Icône du site -->
-  <link rel="icon" type="image/x-icon" href="/abdoulaye-portfolio/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,12 +24,12 @@
 
 <!-- Script pour charger dynamiquement le bon fichier JS -->
 <script>
-  fetch('/abdoulaye-portfolio/manifest.json')
+  fetch('manifest.json')
           .then(response => response.json())
           .then(manifest => {
             const script = document.createElement('script');
             script.type = 'module';
-            script.src = `/abdoulaye-portfolio/${manifest['index.html'].file}`;
+            script.src = manifest['index.html'].file;
             document.body.appendChild(script);
           });
 </script>
